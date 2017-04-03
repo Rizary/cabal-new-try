@@ -1,0 +1,6 @@
+
+optional-packages: ./*/{reflex,reflex-dom,reflex-dom-contrib}/*.cabal
+packages: ./.
+with-compiler: /Users/Rizitecs/.cabal/bin/ghcjs
+compiler: ghcjs
+

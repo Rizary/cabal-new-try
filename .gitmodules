@@ -1,0 +1,9 @@
+[submodule "frontend/deps/reflex-dom"]
+	path = frontend/deps/reflex-dom
+	url = https://github.com/reflex-frp/reflex-dom.git
+[submodule "frontend/deps/reflex"]
+	path = frontend/deps/reflex
+	url = https://github.com/reflex-frp/reflex.git
+[submodule "frontend/deps/reflex-dom-contrib"]
+	path = frontend/deps/reflex-dom-contrib
+	url = https://github.com/reflex-frp/reflex-dom-contrib.git
