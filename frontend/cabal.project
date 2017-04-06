@@ -1,5 +1,5 @@
-with-compiler: /Users/Rizitecs/.cabal/bin/ghcjs
-compiler: ghcjs
+with-compiler: /usr/local/bin/ghc
+compiler: ghc
 
 flags: -overloaded-methods -overloaded-signals -overloaded-properties
 
