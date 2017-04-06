@@ -20,4 +20,4 @@
 [submodule "frontend/deps/aeson"]
 	path = frontend/deps/aeson
 	url = https://github.com/bos/aeson.git
-	branch = origin/7f2a12c1deacb5c1fa58fe8842fd14d1915e01d1
+	branch = origin/master/7f2a12c1deacb5c1fa58fe8842fd14d1915e01d1
