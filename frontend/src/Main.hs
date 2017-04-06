@@ -11,20 +11,23 @@ import Data.Monoid ((<>))
 import Data.Text (Text)
 import qualified Data.Text as T
 
--- import GHCJS.DOM.Types (JSM)
+import GHCJS.DOM.Types (JSM)
 
 import Reflex
 import Reflex.Dom.Core
 import Data.Text.Encoding (encodeUtf8)
 import Debug.Trace (trace)
--- import Language.Javascript.JSaddle.WKWebView (run)
+import Language.Javascript.JSaddle.WKWebView (run)
 
 --------------------------------------------------------------------------------
 -- View
 --------------------------------------------------------------------------------
 
-main :: IO ()
-main =  mainWidget $ el "div" $ text "Welcome to Reflex"
+main :: IO()
+main = run mainWk
+
+mainWk :: JSM ()
+mainWk = mainWidget $ el "div" $ text "Welcome to Reflex"
 
 {-| todoMVC :: ( DomBuilder t m
            , DomBuilderSpace m ~ GhcjsDomSpace
@@ -35,5 +38,3 @@ main =  mainWidget $ el "div" $ text "Welcome to Reflex"
         => m ()
 todoMVC = do
   el "div" $ do -}
-
-

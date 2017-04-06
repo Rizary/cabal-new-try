@@ -7,3 +7,9 @@
 [submodule "frontend/deps/reflex-dom-contrib"]
 	path = frontend/deps/reflex-dom-contrib
 	url = https://github.com/reflex-frp/reflex-dom-contrib.git
+[submodule "frontend/deps/jsaddle"]
+	path = frontend/deps/jsaddle
+	url = https://github.com/ghcjs/jsaddle.git
+[submodule "frontend/deps/gtk2hs"]
+	path = frontend/deps/gtk2hs
+	url = https://github.com/gtk2hs/gtk2hs.git
