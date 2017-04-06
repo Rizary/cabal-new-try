@@ -1,45 +1,16 @@
+with-compiler: /Users/Rizitecs/.cabal/bin/ghcjs
+compiler: ghcjs
+
 flags: -overloaded-methods -overloaded-signals -overloaded-properties
 
-packages: ./*.cabal
+packages:
+  ./
+  deps/reflex/
+  deps/reflex-dom/
 
-optional-packages:  ./*/{reflex,gtk2hs,reflex-dom,reflex-dom-contrib,aeson}/*.cabal ./*/*/{jsaddle,jsaddle-wkwebview}/*.cabal 
+
+  
 
 
-package aeson
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-atk
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-cairo
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-gdk
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-gdkpixbuf
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-gio
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-glib
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-gobject
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-gtk
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-gtk-hs
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-gtkosxapplication
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-gtksource
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-javascriptcore
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-pango
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-soup
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-webkit
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
-package gi-webkit2
- flags: -overloaded-methods -overloaded-signals -overloaded-properties
 
-with-compiler: /usr/local/bin/ghc-8.0.2
-compiler: ghc
 

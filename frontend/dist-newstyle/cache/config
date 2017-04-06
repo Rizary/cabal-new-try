@@ -1,6 +1,4 @@
-packages: ./*.cabal
-optional-packages: ./*/{reflex,gtk2hs,reflex-dom,reflex-dom-contrib,aeson}/*.cabal
-                   ./*/*/{jsaddle,jsaddle-wkwebview}/*.cabal
+packages: ./ deps/reflex/ deps/reflex-dom/
 remote-repo-cache: /Users/Rizitecs/.cabal/packages
 logs-dir: /Users/Rizitecs/.cabal/logs
 world-file: /Users/Rizitecs/.cabal/world
@@ -18,9 +16,9 @@ jobs: $ncpus
 offline: False
 extra-prog-path: /Users/Rizitecs/.cabal/bin
 flags: -overloaded-methods -overloaded-signals -overloaded-properties
-compiler: ghc
-with-compiler: /usr/local/bin/ghc-8.0.2
-compiler: ghc
+compiler: ghcjs
+with-compiler: /Users/Rizitecs/.cabal/bin/ghcjs
+compiler: ghcjs
 documentation: False
 haddock-keep-temp-files: False
 haddock-hoogle: False
@@ -31,67 +29,13 @@ haddock-benchmarks: False
 haddock-internal: False
 haddock-hyperlink-source: False
 
-package aeson
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-atk
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-cairo
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-gdk
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-gdkpixbuf
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-gio
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-glib
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-gobject
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-gtk
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-gtk-hs
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-gtkosxapplication
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-gtksource
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-javascriptcore
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-pango
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-soup
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-webkit
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
-package gi-webkit2
-  flags: -overloaded-methods -overloaded-signals -overloaded-properties
-
 program-locations
   alex-location: /Users/Rizitecs/.cabal/bin/alex
-  cpphs-location: /Users/Rizitecs/.cabal/bin/cpphs
-  ghc-location: /usr/local/bin/ghc-8.0.2
-  ghc-pkg-location: /usr/local/bin/ghc-pkg-8.0.2
-  ghcjs-location: /Users/Rizitecs/.cabal/bin/ghcjs-0.2.1-8.0.2
-  ghcjs-pkg-location: /Users/Rizitecs/.cabal/bin/ghcjs-pkg-0.2.1-8.0.2
-  haddock-location: /Users/Rizitecs/.cabal/bin/haddock-ghcjs-0.2.1-8.0.2
+  ghc-location: /usr/local/bin/ghc
+  ghc-pkg-location: /usr/local/bin/ghc-pkg
+  ghcjs-location: /Users/Rizitecs/.cabal/bin/ghcjs
+  ghcjs-pkg-location: /Users/Rizitecs/.cabal/bin/ghcjs-pkg
   happy-location: /Users/Rizitecs/.cabal/bin/happy
-  hsc2hs-location: /Users/Rizitecs/.cabal/bin/hsc2hs-ghcjs-0.2.1-8.0.2
 
 repository hackage.haskell.org
   url: http://hackage.haskell.org/
