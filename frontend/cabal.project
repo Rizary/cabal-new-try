@@ -6,8 +6,19 @@ flags: -overloaded-methods -overloaded-signals -overloaded-properties
 packages:
   ./
   deps/reflex/
-  deps/reflex-dom/
-
+  deps/reflex-dom/reflex-dom/
+  deps/reflex-dom/reflex-dom-core/
+  deps/jsaddle/jsaddle-wkwebview/
+  deps/aeson/
+  deps/text/
+  deps/dependent-sum-template/
+  --deps/dependent-sum/
+  --deps/dependent-map/
+  --deps/vector/
+  --deps/primitive/
+  --deps/deepseq/
+  --deps/bytestring/
+  
 
   
 

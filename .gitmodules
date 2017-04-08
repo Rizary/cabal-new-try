@@ -17,3 +17,27 @@
 	path = frontend/deps/aeson
 	url = https://github.com/bos/aeson.git
 	branch = master
+[submodule "frontend/deps/dependent-sum"]
+	path = frontend/deps/dependent-sum
+	url = https://github.com/mokus0/dependent-sum.git
+[submodule "frontend/deps/dependent-map"]
+	path = frontend/deps/dependent-map
+	url = https://github.com/mokus0/dependent-map.git
+[submodule "frontend/deps/dependent-sum-template"]
+	path = frontend/deps/dependent-sum-template
+	url = https://github.com/mokus0/dependent-sum-template
+[submodule "frontend/deps/vector"]
+	path = frontend/deps/vector
+	url = https://github.com/haskell/vector.git
+[submodule "frontend/deps/primitive"]
+	path = frontend/deps/primitive
+	url = https://github.com/haskell/primitive.git
+[submodule "frontend/deps/deepseq"]
+	path = frontend/deps/deepseq
+	url = https://github.com/haskell/deepseq.git
+[submodule "frontend/deps/text"]
+	path = frontend/deps/text
+	url = https://github.com/bos/text.git
+[submodule "frontend/deps/bytestring"]
+	path = frontend/deps/bytestring
+	url = https://github.com/haskell/bytestring.git
