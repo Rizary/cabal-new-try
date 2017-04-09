@@ -2,17 +2,8 @@
 
 import Distribution.Simple
 
--- #if !defined(ghcjs_HOST_OS) && defined(MIN_VERSION_cabal_macosx)
+#if !defined(ghcjs_HOST_OS) && defined(MIN_VERSION_cabal_macosx)
 import Distribution.MacOSX
-
-main :: IO ()
-main = defaultMainWithHooks $ simpleUserHooks
--- #if !defined(ghcjs_HOST_OS) && defined(MIN_VERSION_cabal_macosx)
-      {
-          postBuild = appBundleBuildHook guiApps,
-	  postCopy = appBundleCopyHook guiApps
-       }
--- #endif
 
 guiApps :: [MacApp]
 guiApps = [
@@ -23,4 +14,13 @@ guiApps = [
       []
       DoNotChase
    ]
--- #endif
+#endif
+
+main :: IO ()
+main = defaultMainWithHooks $ simpleUserHooks
+#if !defined(ghcjs_HOST_OS) && defined(MIN_VERSION_cabal_macosx)
+       {
+          postBuild = appBundleBuildHook guiApps,
+	  postCopy = appBundleCopyHook guiApps
+       }
+#endif

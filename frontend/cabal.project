@@ -12,16 +12,6 @@ packages:
   deps/aeson/
   deps/text/
   deps/dependent-sum-template/
-  --deps/dependent-sum/
-  --deps/dependent-map/
-  --deps/vector/
-  --deps/primitive/
-  --deps/deepseq/
-  --deps/bytestring/
-  
 
-  
-
-
-
-
+package reflex-dom-core
+  flags: -build-examples
