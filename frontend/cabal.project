@@ -10,9 +10,12 @@ packages:
   deps/reflex-dom/reflex-dom/
   deps/reflex-dom/reflex-dom-core/
   deps/jsaddle/jsaddle-wkwebview/
-  deps/aeson/
+  -- deps/aeson/
   deps/text/
   deps/dependent-sum-template/
 
 package reflex-dom-core
   flags: -build-examples
+
+constraints:
+  aeson < 1.1.0.0
