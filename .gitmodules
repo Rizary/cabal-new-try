@@ -29,9 +29,6 @@
 [submodule "frontend/deps/vector"]
 	path = frontend/deps/vector
 	url = https://github.com/haskell/vector.git
-[submodule "frontend/deps/primitive"]
-	path = frontend/deps/primitive
-	url = https://github.com/haskell/primitive.git
 [submodule "frontend/deps/deepseq"]
 	path = frontend/deps/deepseq
 	url = https://github.com/haskell/deepseq.git
