@@ -10,10 +10,6 @@
 [submodule "frontend/deps/jsaddle"]
 	path = frontend/deps/jsaddle
 	url = https://github.com/ghcjs/jsaddle.git
-[submodule "frontend/deps/aeson"]
-	path = frontend/deps/aeson
-	url = https://github.com/bos/aeson.git
-	branch = master
 [submodule "frontend/deps/dependent-sum-template"]
 	path = frontend/deps/dependent-sum-template
 	url = https://github.com/mokus0/dependent-sum-template
