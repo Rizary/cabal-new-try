@@ -10,7 +10,6 @@ packages:
   deps/reflex-dom/reflex-dom/
   deps/reflex-dom/reflex-dom-core/
   deps/jsaddle/jsaddle-wkwebview/
-  -- deps/aeson/
   deps/text/
   deps/dependent-sum-template/
 
